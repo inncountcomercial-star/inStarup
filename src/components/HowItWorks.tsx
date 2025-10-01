@@ -17,7 +17,7 @@ const steps = [
     icon: Package,
     number: '03',
     title: 'Personalize',
-    description: 'Monte os pacotes como desejar: seguidores, curtidas e comentários para seu Instagram.',
+    description: 'Monte os pacotes como desejar: seguidores, curtidas e comentários para seu Instagram. Insira o texto após o "." e envie pelo whatsapp.',
   },
 ];
 
