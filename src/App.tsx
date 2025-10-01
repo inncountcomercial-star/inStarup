@@ -2,6 +2,7 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { SocialProof } from './components/SocialProof';
 import { HowItWorks } from './components/HowItWorks';
+import { PackageBuilder } from './components/PackageBuilder';
 import { Security } from './components/Security';
 import { FAQ } from './components/FAQ';
 import { Footer } from './components/Footer';
@@ -35,6 +36,7 @@ function App() {
       <Hero />
       <SocialProof />
       <HowItWorks />
+      <PackageBuilder />
       <Security />
       <FAQ />
       <Footer />
