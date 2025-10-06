@@ -45,24 +45,8 @@ export function Header() {
             >
               FAQ
             </button>
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500 text-white px-6 py-2.5 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all"
-            >
-              Comprar
-            </a>
           </div>
 
-          <a
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="md:hidden bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500 text-white px-5 py-2 rounded-lg font-semibold text-sm"
-          >
-            Comprar
-          </a>
         </div>
       </nav>
     </header>
