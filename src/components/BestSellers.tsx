@@ -19,7 +19,7 @@ const PACKAGES: Package[] = [
     id: 2,
     quantity: 500,
     price: 25.00,
-    checkoutUrl: 'https://pay.cakto.com.br/d9zcbne'
+    checkoutUrl: 'https://pay.cakto.com.br/d9zcbnf'
   },
   {
     id: 3,
