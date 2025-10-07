@@ -126,13 +126,6 @@ export function BestSellers() {
                 Comprar Agora
               </a>
 
-              {pkg.isPopular && (
-                <div className="mt-4 text-center">
-                  <span className="text-sm text-gray-600 font-medium">
-                    ⚡ Entrega em até 24 horas
-                  </span>
-                </div>
-              )}
             </div>
           ))}
         </div>
