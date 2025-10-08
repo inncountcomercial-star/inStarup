@@ -31,6 +31,16 @@ export function Hero() {
               Aumente seu Instagram em Minutos!
             </span>
           </p>
+
+          <a
+            href="https://pay.cakto.com.br/rv9u2po"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-all shadow-lg hover:shadow-xl"
+          >
+            Quero Crescer no Instagram Agora!
+            <ArrowRight className="w-6 h-6" />
+          </a>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mt-16 max-w-4xl mx-auto">
