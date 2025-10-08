@@ -1,4 +1,5 @@
 import { Users, Star, ShoppingCart } from 'lucide-react';
+import { createConfetti } from '../utils/confetti';
 
 interface Package {
   id: number;
@@ -116,6 +117,7 @@ export function BestSellers() {
                 href={pkg.checkoutUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => createConfetti(e)}
                 className={`block w-full py-4 rounded-xl font-bold text-center transition-all hover:scale-105 hover:shadow-lg flex items-center justify-center gap-2 ${
                   pkg.isPopular
                     ? 'bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500 text-white'

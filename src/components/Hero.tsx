@@ -1,5 +1,6 @@
 import { ArrowRight, Instagram, Heart, MessageCircle, UserPlus, Clock } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { createConfetti } from '../utils/confetti';
 
 const WHATSAPP_LINK = 'https://wa.me/+5581991584815';
 
@@ -50,6 +51,7 @@ export function Hero() {
             href="https://pay.cakto.com.br/t72qeu6"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={(e) => createConfetti(e)}
             className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-all shadow-lg hover:shadow-xl"
           >
             Quero Crescer no Instagram Agora!
