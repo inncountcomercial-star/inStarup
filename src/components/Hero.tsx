@@ -48,7 +48,7 @@ export function Hero() {
           </p>
 
           <a
-            href="https://pay.cakto.com.br/t72qeu6"
+            href="https://wa.me/5581991584815"
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => createConfetti(e)}
@@ -68,12 +68,22 @@ export function Hero() {
             <p className="text-lg font-bold text-gray-900 mb-2">
               🎁 BÔNUS ESPECIAL - OFERTA LIMITADA!
             </p>
-            <p className="text-base text-gray-700">
+            <p className="text-base text-gray-700 mb-4">
               <span className="font-bold text-green-600">10% de Desconto</span> +
               <span className="font-bold"> 1.000 Seguidores</span> +
               <span className="font-bold"> 10 Curtidas</span> +
               <span className="font-bold"> 10 Comentários</span>
             </p>
+            <a
+              href="https://pay.cakto.com.br/t72qeu6"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => createConfetti(e)}
+              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-green-600 to-emerald-600 text-white px-6 py-3 rounded-xl font-bold text-base hover:scale-105 transition-all shadow-md hover:shadow-lg w-full"
+            >
+              Aproveitar Oferta Agora!
+              <ArrowRight className="w-5 h-5" />
+            </a>
           </div>
         </div>
 
