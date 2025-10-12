@@ -40,9 +40,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://wa.me/+5581991584815"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#packages"
                   className="hover:text-pink-400 transition-colors"
                 >
                   Comprar
