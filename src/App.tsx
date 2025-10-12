@@ -1,6 +1,5 @@
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
-import { BestSellers } from './components/BestSellers';
 import { SocialProof } from './components/SocialProof';
 import { HowItWorks } from './components/HowItWorks';
 import { PackageBuilder } from './components/PackageBuilder';
@@ -35,7 +34,6 @@ function App() {
     <div className="min-h-screen bg-white">
       <Header />
       <Hero />
-      <BestSellers />
       <SocialProof />
       <HowItWorks />
       <PackageBuilder />
