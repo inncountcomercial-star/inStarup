@@ -1,4 +1,6 @@
-import { ArrowRight, Instagram, Heart, MessageCircle, UserPlus } from 'lucide-react';
+import { ArrowRight, Instagram, Heart, MessageCircle, UserPlus, Clock } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { createConfetti } from '../utils/confetti';
 
 const WHATSAPP_LINK = 'https://wa.me/+5581991584815';
 
@@ -9,6 +11,19 @@ const services = [
 ];
 
 export function Hero() {
+  const [timeLeft, setTimeLeft] = useState(600);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft((prev) => (prev > 0 ? prev - 1 : 0));
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const minutes = Math.floor(timeLeft / 60);
+  const seconds = timeLeft % 60;
+
   return (
     <section className="pt-32 pb-20 px-4" id="services">
       <div className="container mx-auto max-w-6xl">
@@ -31,13 +46,35 @@ export function Hero() {
               Aumente seu Instagram em Minutos!
             </span>
           </p>
+
           <a
-            href="#packages"
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all"
+            href="https://pay.cakto.com.br/t72qeu6"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => createConfetti(e)}
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-all shadow-lg hover:shadow-xl"
           >
-            Comece Agora
-            <ArrowRight className="w-5 h-5" />
+            Quero Crescer no Instagram Agora!
+            <ArrowRight className="w-6 h-6" />
           </a>
+
+          <div className="mt-6 bg-gradient-to-r from-green-50 via-emerald-50 to-teal-50 border-2 border-green-400 rounded-2xl p-6 max-w-2xl mx-auto shadow-lg">
+            <div className="flex items-center justify-center gap-3 mb-3">
+              <Clock className="w-6 h-6 text-green-600" />
+              <p className="text-2xl font-bold text-green-600">
+                {String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}
+              </p>
+            </div>
+            <p className="text-lg font-bold text-gray-900 mb-2">
+              🎁 BÔNUS ESPECIAL - OFERTA LIMITADA!
+            </p>
+            <p className="text-base text-gray-700">
+              <span className="font-bold text-green-600">10% de Desconto</span> +
+              <span className="font-bold"> 1.000 Seguidores</span> +
+              <span className="font-bold"> 10 Curtidas</span> +
+              <span className="font-bold"> 10 Comentários</span>
+            </p>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mt-16 max-w-4xl mx-auto">

@@ -1,4 +1,5 @@
-import { Zap } from 'lucide-react';
+import { Zap, MessageCircle } from 'lucide-react';
+import { createConfetti } from '../utils/confetti';
 
 const WHATSAPP_LINK = 'https://wa.me/+5581991584815';
 
@@ -26,7 +27,7 @@ export function Header() {
             </div>
           </div>
 
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-4">
             <button
               onClick={() => scrollToSection('services')}
               className="text-gray-800 hover:text-pink-600 transition-colors font-medium"
@@ -45,20 +46,18 @@ export function Header() {
             >
               FAQ
             </button>
-            <button
-              onClick={() => scrollToSection('packages')}
-              className="bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500 text-white px-6 py-2.5 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all"
+            <a
+              href="https://wa.me/+5581991584815"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => createConfetti(e)}
+              className="relative inline-flex items-center gap-2 bg-gradient-to-r from-green-500 to-emerald-600 text-white px-6 py-3 rounded-lg font-bold shadow-lg hover:scale-105 transition-all animate-pulse"
             >
-              Comprar
-            </button>
+              <MessageCircle className="w-5 h-5" />
+              Fale com um Vendedor!
+            </a>
           </div>
 
-          <button
-            onClick={() => scrollToSection('packages')}
-            className="md:hidden bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500 text-white px-5 py-2 rounded-lg font-semibold text-sm"
-          >
-            Comprar
-          </button>
         </div>
       </nav>
     </header>
